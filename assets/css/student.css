@@ -1,0 +1,183 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Content Styling */
+.content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Header Styling */
+.content h1 {
+  font-size: 2rem;
+  color: #007b8c;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Filter Section */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.filter label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-right: 8px;
+}
+
+.filter select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.filter select:focus {
+  border-color: #007b8c;
+  box-shadow: 0 0 5px rgba(0, 123, 140, 0.4);
+}
+
+.filter button {
+  padding: 10px 20px;
+  background-color: #00b4d8;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter button:hover {
+  background-color: #009bb2;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #007b8c;
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f2f8fb;
+}
+
+table td[colspan="4"] {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* Button Section */
+div a {
+  text-decoration: none;
+}
+
+div button {
+  padding: 12px 24px;
+  background-color: #007b8c;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+div button:hover {
+  background-color: #005f6b;
+}
+
+div button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 140, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  .filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter select {
+    width: 100%;
+  }
+
+  .filter button {
+    width: 100%;
+  }
+
+  table th, table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  div button {
+    width: 100%;
+  }
+}

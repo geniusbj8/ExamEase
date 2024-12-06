@@ -1,0 +1,286 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 220px;
+  height: 100%;
+  background: linear-gradient(135deg, #00b4d8, #007b8c);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px 20px;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #009bb2;
+  transform: scale(1.05);
+}
+
+/* Main Content Styling */
+.content {
+  margin-left: 240px; /* Account for sidebar width */
+  padding: 40px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Header Styling */
+.content h1 {
+  font-size: 28px;
+  color: #007b8c;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Form Styling */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+form select, form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+form select:focus, form input[type="number"]:focus {
+  border-color: #00b4d8;
+  outline: none;
+}
+
+/* Submit Button Styling */
+form button {
+  background-color: #00b4d8;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #009bb2;
+  transform: scale(1.05);
+}
+
+/* Chart Container Styling */
+#chartContainer {
+  display: none;
+  margin-top: 30px;
+}
+
+#resultsChart {
+  width: 100% !important; /* Ensure the chart takes full width */
+  height: 400px; /* Set a fixed height */
+}
+
+/* Form Input Focus Effect */
+form input:focus, form select:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    padding: 30px 15px;
+  }
+
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  #resultsChart {
+    height: 300px; /* Adjust chart height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+    padding: 20px;
+  }
+
+  .content {
+    margin-left: 160px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  #resultsChart {
+    height: 250px; /* Further adjust chart height for very small screens */
+  }
+}
+
+
+/* Error message styling */
+p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Success and Error Messages Styling */
+p {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+p.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+p.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* View Results Section Styling */
+#viewResultsContainer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#viewResultsContainer label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+#viewResultsContainer select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+#viewResultsContainer select:focus {
+  border-color: #00b4d8;
+  outline: none;
+}
+
+/* View Results Button */
+#viewResultsButton {
+  background-color: #00b4d8;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#viewResultsButton:hover {
+  background-color: #009bb2;
+  transform: scale(1.05);
+}
+
+/* Chart Container Styling */
+#chartContainer {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resultsChart {
+  width: 100% !important; /* Ensure the chart takes full width */
+  height: 400px; /* Set a fixed height */
+}
+
+/* Loading Indicator */
+#loadingIndicator {
+  display: none;
+  font-size: 18px;
+  color: #007b8c;
+  margin-top: 20px;
+}

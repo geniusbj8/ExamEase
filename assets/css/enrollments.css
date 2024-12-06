@@ -1,0 +1,140 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container */
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #2a6496;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #1f4e79;
+  margin-bottom: 10px;
+}
+
+/* Enrolled courses section */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+ul li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+ul li:hover {
+  background-color: #e0f7fa;
+}
+
+/* Message when no courses are enrolled */
+p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Available courses form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+select {
+  padding: 10px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+select:focus {
+  border-color: #2a6496;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #2a6496;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+button:hover {
+  background-color: #1f4e79;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Style for the Return to Dashboard button */
+button.return-to-dashboard {
+  background-color: #4CAF50; /* Green background for the return button */
+  width: 180px; /* Slightly larger width */
+  margin-top: 20px;
+}
+
+button.return-to-dashboard:hover {
+  background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.8em;
+  }
+
+  h2 {
+      font-size: 1.3em;
+  }
+
+  select {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  /* Adjust the Return to Dashboard button for mobile view */
+  button.return-to-dashboard {
+    width: 100%;
+  }
+}

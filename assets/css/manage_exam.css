@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for content */
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+/* Table Styling */
+.exam-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exam-list th,
+.exam-list td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.exam-list th {
+  background: #2ecc71;
+  color: white;
+  font-size: 1rem;
+}
+
+.exam-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exam-list tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.exam-list td {
+  font-size: 0.95rem;
+}
+
+.exam-list button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.exam-list button:hover {
+  opacity: 0.9;
+}
+
+.exam-list button:nth-child(1) {
+  background-color: #3498db;
+}
+
+.exam-list button:nth-child(1):hover {
+  background-color: #2980b9;
+}
+
+.exam-list button:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+.exam-list button:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+/* Form Styling */
+.exam-form {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exam-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.exam-form input,
+.exam-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.exam-form input:focus,
+.exam-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.exam-form button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.exam-form button:hover {
+  background-color: #27ae60;
+}
+
+.exam-form button:focus {
+  outline: none;
+}
+
+/* Navigation Buttons */
+.redirect {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  margin: 15px 10px 0 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.redirect:hover {
+  background-color: #2980b9;
+}
+
+.redirect:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .exam-list th, .exam-list td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}

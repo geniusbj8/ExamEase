@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+/* Table Styling */
+#questionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#questionTable th,
+#questionTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#questionTable th {
+  background: #3498db;
+  color: white;
+  font-size: 1rem;
+}
+
+#questionTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#questionTable tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+#questionTable td {
+  font-size: 0.95rem;
+}
+
+/* Buttons in Table */
+#questionTable button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+#questionTable .edit-btn {
+  background-color: #27ae60;
+}
+
+#questionTable .edit-btn:hover {
+  background-color: #2ecc71;
+}
+
+#questionTable .delete-btn {
+  background-color: #e74c3c;
+}
+
+#questionTable .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Form Styling */
+.question-form {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.question-form input,
+.question-form select,
+.question-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.question-form input:focus,
+.question-form select:focus,
+.question-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.question-form button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.question-form button:hover {
+  background-color: #2980b9;
+}
+
+.question-form button:focus {
+  outline: none;
+}
+
+/* Navigation Buttons */
+.redirect {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  margin: 15px 10px 0 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.redirect:hover {
+  background-color: #2980b9;
+}
+
+.redirect:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #questionTable th,
+  #questionTable td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}

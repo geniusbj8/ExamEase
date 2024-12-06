@@ -1,0 +1,163 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 220px;
+  height: 100%;
+  background: linear-gradient(135deg, #00b4d8, #007b8c);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px 20px;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #009bb2;
+  transform: scale(1.05);
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 240px; /* Account for sidebar width */
+  padding: 40px;
+  width: calc(100% - 240px);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.welcome {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Overview Section */
+.overview {
+  margin-top: 20px;
+}
+
+.overview h1 {
+  font-size: 28px;
+  color: #007b8c;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-box h3 {
+  font-size: 20px;
+  color: #007b8c;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .statistics {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar h2 {
+    font-size: 20px;
+  }
+
+  .stat-box h3 {
+    font-size: 18px;
+  }
+
+  .stat-box p {
+    font-size: 20px;
+  }
+}

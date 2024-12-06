@@ -1,0 +1,189 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main content container */
+.main-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #2a3d66;
+  margin-bottom: 25px;
+}
+
+/* Feedback messages */
+.success, .error {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success {
+  background-color: #e8f8ea;
+  color: #1c7c38;
+  border: 1px solid #1c7c38;
+}
+
+.error {
+  background-color: #fde4e4;
+  color: #b12d2d;
+  border: 1px solid #b12d2d;
+}
+
+/* Table styling */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.student-table thead th {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 14px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.student-table tbody td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.student-table tbody tr:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+.student-table tbody tr:hover {
+  background-color: #eef4fa;
+  cursor: default;
+}
+
+.sub-data {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #dce6f0;
+  border-radius: 6px;
+}
+
+/* Forms and dropdown styling */
+form {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+  color: #2a3d66;
+}
+
+select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccd6e3;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ffffff;
+  color: #333333;
+  margin-right: 10px;
+}
+
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Back to Dashboard button */
+a button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a button:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .student-table tbody td {
+    font-size: 12px;
+  }
+
+  form {
+    display: block;
+    margin: 10px 0;
+  }
+
+  label, select, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
