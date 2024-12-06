@@ -1,0 +1,15 @@
+admin login
+
+Username: `admin`
+Password: `adminpassword`
+
+
+instructor login
+
+Username: `instructor`
+Password: `instructorpassword`
+
+Student login
+
+Username: `student`
+Password: `studentpassword`
